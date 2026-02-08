@@ -86,7 +86,12 @@ randomBackSpan.forEach((span) => {
 let landingPage = document.querySelector(".landing-page");
 
 // Get Array Of Images
-let imagesArray = ["background1.webp", "background2.jpg", "background3.jpg", "background4.jpg"];
+let imagesArray = [
+  "background1.webp",
+  "background2.jpg",
+  "background3.jpg",
+  "background4.jpg",
+];
 
 // Change Background Image URL
 landingPage.style.backgroundImage = 'url("./images/background1.webp")';
