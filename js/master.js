@@ -89,7 +89,7 @@ let landingPage = document.querySelector(".landing-page");
 let imagesArray = ["background1.webp", "background2.jpg", "background3.jpg"];
 
 // Change Background Image URL
-landingPage.style.backgroundImage = 'url("../images/background1.webp")';
+landingPage.style.backgroundImage = 'url("./images/background1.webp")';
 
 // Set
 function randomizeImages() {
@@ -97,7 +97,7 @@ function randomizeImages() {
     backgroundInterval = setInterval(() => {
       // Get Random Number
       let randomNumber = Math.floor(Math.random() * imagesArray.length);
-      landingPage.style.backgroundImage = `url("../images/${imagesArray[randomNumber]}")`;
+      landingPage.style.backgroundImage = `url("./images/${imagesArray[randomNumber]}")`;
     }, 10000);
   }
 }
