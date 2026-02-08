@@ -257,6 +257,12 @@ body {
 .settings-box .option-box .colors-list li:nth-child(6) {
   background-color: #00bcd4;
 }
+.settings-box .option-box .colors-list li:nth-child(7) {
+  background-color: #9c27b0;
+}
+.settings-box .option-box .colors-list li:nth-child(8) {
+  background-color: #9E9E9E;
+}
 .settings-box .option-box .yes,
 .settings-box .option-box .no {
   width: 40px;
