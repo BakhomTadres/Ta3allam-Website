@@ -132,6 +132,11 @@ window.onscroll = () => {
       skill.style.width = skill.dataset.progress;
     });
   }
+  if (this.scrollY > 100) {
+    buttonUp.style.display = "block";
+  } else {
+    buttonUp.style.display = "none";
+  }
 };
 
 // Create Popup For The Image
@@ -197,3 +202,12 @@ function intoView(element) {
 }
 intoView(allLinksNotWide);
 intoView(allLinksWide);
+// Button Up
+let buttonUp = document.querySelector(".button-up");
+
+buttonUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
