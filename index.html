@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ta3allam</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="gear">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h3>colors</h3>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#03a9f4"></li>
+            <li data-color="#e91e63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#f44336"></li>
+            <li data-color="#00bcd4"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h3>Random Background</h3>
+          <div class="random-backgrounds">
+            <span class="yes" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+    <!-- Start Landing page -->
+    <div class="landing-page">
+      <div class="container">
+        <header>
+          <div class="logo">Ta3allam</div>
+          <ul class="wide">
+            <li><a class="active" href="#" data-section=".about">About</a></li>
+            <li><a href="#" data-section=".our-skills">Skills</a></li>
+            <li><a href="#" data-section=".courses">Courses</a></li>
+            <li><a href="#" data-section=".features">Features</a></li>
+            <li><a href="#" data-section=".contact">Contact</a></li>
+          </ul>
+          <ul class="not-wide">
+            <li><a class="active" href="#" data-section=".about">About</a></li>
+            <li><a href="#" data-section=".our-skills">Skills</a></li>
+            <li><a href="#" data-section=".courses">Courses</a></li>
+            <li><a href="#" data-section=".features">Features</a></li>
+            <li><a href="#" data-section=".contact">Contact</a></li>
+          </ul>
+          <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </header>
+      </div>
+      <div class="overlay"></div>
+      <div class="introduction">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>We offer courses for various programming languages.</p>
+      </div>
+    </div>
+    <!-- End Landing page -->
+    <!-- Start About Us -->
+    <div class="container">
+      <div class="about-us" id="about">
+        <div class="text">
+          <h2>About Us</h2>
+          <p>We are an online agency that offers many programming courses.</p>
+          <p>We have courses such as HTML, CSS, JS, Python, and others.</p>
+        </div>
+        <div class="image">
+          <img src="/images/about.avif" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start About US -->
+    <div class="our-skills">
+      <div class="container">
+        <h2>Our Skills</h2>
+        <div class="skill-box">
+          <div class="skill-name">HTML</div>
+          <div class="skill-progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">CSS</div>
+          <div class="skill-progress">
+            <span data-progress="75%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">Python</div>
+          <div class="skill-progress">
+            <span data-progress="65%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">PHP</div>
+          <div class="skill-progress">
+            <span data-progress="60%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">C++</div>
+          <div class="skill-progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About US -->
+    <!-- Start Our Courses -->
+    <div class="courses" id="courses">
+      <div class="container">
+        <h2>Our Courses</h2>
+        <div class="boxs">
+          <div class="course-box">
+            <img
+              src="/images/course1.png"
+              alt=""
+              data-paragragh="
+HTML is the backbone of a website and is responsible for creating elements and writing code."
+            />
+
+            <div class="text">
+              <h3>HTML</h3>
+              <div class="price">
+                <span>$10</span>
+                <span>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+              </div>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="course-box">
+            <div class="image">
+              <img
+                src="/images/course2.webp"
+                alt=""
+                data-paragragh="CSS is responsible for formatting and modifying elements."
+              />
+            </div>
+            <div class="text">
+              <h3>CSS</h3>
+              <div class="price">
+                <span>$15</span>
+                <span>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star-half gold"></i>
+                </span>
+              </div>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="course-box">
+            <div class="image">
+              <img
+                src="/images/course3.png"
+                alt=""
+                data-paragragh="
+JavaScript is the logic language used on websites so we can manipulate the elements within the website"
+              />
+            </div>
+            <div class="text">
+              <h3>JavaScript</h3>
+              <div class="price">
+                <span>$30</span>
+                <span>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                </span>
+              </div>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="course-box">
+            <div class="image">
+              <img
+                src="/images/course4.webp"
+                alt=""
+                data-paragragh="Python is a programming language that is widely used in web applications, software development, data science, and machine learning (ML)."
+              />
+            </div>
+            <div class="text">
+              <h3>Python</h3>
+              <div class="price">
+                <span>$20</span>
+                <span>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                </span>
+              </div>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="course-box">
+            <div class="image">
+              <img
+                src="/images/course5.png"
+                alt=""
+                data-paragragh="An open-source, server-side scripting language specifically designed for developing dynamic web applications and websites. Its code integrates easily with HTML and is used to create interactive content and manage databases."
+              />
+            </div>
+            <div class="text">
+              <h3>Php</h3>
+              <div class="price">
+                <span>$25</span>
+                <span>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+              </div>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="course-box">
+            <div class="image">
+              <img
+                src="/images/course6.png"
+                alt=""
+                data-paragragh="
+C++ is a powerful and high-performance programming language that combines procedural programming (inherited from C) and object-oriented programming. It is used in the development of complex software, game engines, operating systems."
+              />
+            </div>
+            <div class="text">
+              <h3>C++</h3>
+              <div class="price">
+                <span>$5</span>
+                <span>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star gold"></i>
+                  <i class="fa-solid fa-star-half gold"></i>
+                </span>
+              </div>
+              <button>Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Courses -->
+    <!-- Start Features -->
+    <div class="features" id="features">
+      <h2>Our Features</h2>
+      <div class="container">
+        <div class="feature-box">
+          <img src="images/feature1.png" alt="" />
+          <h3>Development</h3>
+          <p>
+            In our courses, we teach trainees how to build websites using
+            advanced code.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="images/feature2.jpg" alt="" />
+          <h3>Teaching courses</h3>
+          <p>
+            We have proven experience in training trainees, making it easy for
+            us to train you to become the best.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="images/feature3.png" alt="" />
+          <h3>Responsive</h3>
+          <p>
+            We offer training on how to create responsive websites for computer,
+            tablet, and mobile screens.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="images/feature4.jpg" alt="" />
+          <h3>Clean Code</h3>
+          <p>
+            We have experience teaching you how to write clean website code.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="images/feature5.png" alt="" />
+          <h3>Programming Languages</h3>
+          <p>We have courses for teaching different programming languages.</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/feature6.avif" alt="" />
+          <h3>Dynamic</h3>
+          <p>We write code in a dynamic, not static, way.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Testimonials -->
+    <div class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="container">
+        <div class="boxs">
+          <div class="ts-box">
+            <p>
+              I am happy to have trained with you, and the training was more
+              than wonderful.
+            </p>
+            <div class="info">
+              <img src="images/testimonials1.png" alt="" />
+              <div class="text" style="margin-right: 20px">
+                <h3>Hassan Salem</h3>
+                <p>CEO at company</p>
+              </div>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              They have an important course in web development, and the course
+              covers creating and formatting elements.
+            </p>
+            <div class="info">
+              <img src="images/testimonials2.jpg" alt="" />
+              <div class="text">
+                <h3>Laila Mustafa</h3>
+                <p>Front-end Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              They have an important course in web development, and the course
+              includes database configuration and server communication.
+            </p>
+            <div class="info">
+              <img src="images/testimonials3.jpg" alt="" />
+              <div class="text">
+                <h3>Ahmed Mahmoud</h3>
+                <p>Back-end Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start Contact US -->
+    <div class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="section">
+            <input type="text" placeholder="Your Name" name="name" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="section">
+            <textarea name="" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact US -->
+    <!-- Start Footer -->
+    <footer>
+      Created By
+      <span
+        ><a href="https://wa.me/qr/5F64HT3CY5S3O1" target="_blank"
+          >Bakhomios Tadres</a
+        ></span
+      >
+    </footer>
+    <!-- End Footer -->
+    <script src="js/master.js"></script>
+  </body>
+</html>
