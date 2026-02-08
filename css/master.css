@@ -152,6 +152,10 @@ body {
     width: 100%;
     margin-left: 0 !important;
   }
+  .button-up {
+    right: 20px;
+    bottom: 20px;
+  }
 }
 @media (min-width: 769px) {
   .container {
