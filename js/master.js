@@ -138,7 +138,7 @@ window.onscroll = () => {
     });
   }
   if (this.scrollY > 100) {
-    buttonUp.style.display = "block";
+    buttonUp.style.display = "flex";
   } else {
     buttonUp.style.display = "none";
   }
