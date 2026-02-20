@@ -444,13 +444,13 @@ header ul li a:hover {
   color: var(--main-color);
   font-size: 32px;
 }
-.courses .boxs {
+.courses .container {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   row-gap: 20px;
 }
-.courses .boxs .course-box {
+.courses .container .course-box {
   background-color: #333;
   width: fit-content;
   padding: 5px 5px 10px;
@@ -460,35 +460,43 @@ header ul li a:hover {
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
+  box-shadow: 0px 0px 5px 1px #333;
+  opacity: 0;
+  translate: -100%;
+  transition: 1s;
 }
-.courses .boxs .course-box img {
+.courses .container .course-box.slide {
+  opacity: 1;
+  translate: 0;
+}
+.courses .container .course-box img {
   width: 300px;
   height: 170px;
   cursor: pointer;
   transition: var(--main-transition);
 }
-.courses .boxs .course-box img:hover {
+.courses .container .course-box img:hover {
   transform: scale(1.1) rotate(1deg);
 }
-.courses .boxs .course-box .text h3 {
+.courses .container .course-box .text h3 {
   font-size: 24px;
   color: var(--main-color);
   text-align: center;
 }
-.courses .boxs .course-box .text span:first-of-type {
+.courses .container .course-box .text span:first-of-type {
   font-size: 25px;
   font-weight: 700;
   color: #fff;
   margin-left: 15px;
 }
-.courses .boxs .course-box .text span:last-of-type {
+.courses .container .course-box .text span:last-of-type {
   font-size: 16px;
   color: #fff;
   position: relative;
   top: -2px;
   left: 100px;
 }
-.courses .boxs .course-box .text button,
+.courses .container .course-box .text button,
 .add-button {
   border: none;
   padding: 10px 15px;
@@ -503,7 +511,7 @@ header ul li a:hover {
   cursor: pointer;
   transition: var(--main-transition);
 }
-.courses .boxs .course-box .text button:hover,
+.courses .container .course-box .text button:hover,
 .add-button:hover {
   opacity: 0.85;
 }
@@ -511,6 +519,7 @@ header ul li a:hover {
 /* Start Our Features */
 .features {
   padding: 50px 0;
+  background-color: #ddd;
 }
 .features h2 {
   text-align: center;
@@ -521,11 +530,21 @@ header ul li a:hover {
 .features .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 .features .feature-box {
   padding: 20px;
   text-align: center;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px 5px #ccc;
+  transition: 1s;
+  opacity: 0;
+  translate: -100%;
+}
+.features .feature-box.slide {
+  opacity: 1;
+  translate: 0;
 }
 .features .feature-box img {
   background-color: #ccc;
@@ -606,6 +625,14 @@ header ul li a:hover {
   background-color: #fff;
   z-index: 2;
   padding: 20px 20px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  translate: -100%;
+  transition: 1s;
+}
+.testimonials .ts-box.slide {
+  opacity: 1;
+  translate: 0;
 }
 .testimonials .ts-box img {
   width: 80px;

@@ -216,3 +216,49 @@ buttonUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Intersection Observer For Courses Boxs
+
+const coursesBoxs = document.querySelectorAll(".courses .course-box");
+const observerCoursesBoxs = new IntersectionObserver((entries) => {
+  entries.forEach((el) => {
+    el.target.classList.toggle("slide", el.isIntersecting);
+    if (el.isIntersecting) {
+      observerCoursesBoxs.unobserve(el.target);
+    }
+  });
+});
+
+coursesBoxs.forEach((box) => {
+  observerCoursesBoxs.observe(box);
+});
+
+// Intersection Observer For Features Boxs
+
+const featuresBoxs = document.querySelectorAll(".features .feature-box");
+const observerFeaturesBoxs = new IntersectionObserver((entries) => {
+  entries.forEach((el) => {
+    el.target.classList.toggle("slide", el.isIntersecting);
+    if (el.isIntersecting) {
+      observerFeaturesBoxs.unobserve(el.target);
+    }
+  });
+});
+featuresBoxs.forEach((box) => {
+  observerFeaturesBoxs.observe(box);
+});
+
+// Intersection Observer For Testimonials Boxs
+
+const testimonialsBoxs = document.querySelectorAll(".testimonials .ts-box");
+const observerTestimonialsBoxs = new IntersectionObserver((entries) => {
+  entries.forEach((el) => {
+    el.target.classList.toggle("slide", el.isIntersecting);
+    if (el.isIntersecting) {
+      observerTestimonialsBoxs.unobserve(el.target);
+    }
+  });
+});
+testimonialsBoxs.forEach((box) => {
+  observerTestimonialsBoxs.observe(box);
+});
